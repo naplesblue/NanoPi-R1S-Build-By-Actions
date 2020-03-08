@@ -37,7 +37,7 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
           wget -O - https://raw.githubusercontent.com/friendlyarm/build-env-on-ubuntu-bionic/master/install.sh | bash
-          sudo apt-get install -y upx         
+          sudo apt-get -y install upx         
           
       - name: Install Repo
         run: |
